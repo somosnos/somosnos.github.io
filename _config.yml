@@ -1,4 +1,4 @@
-title: Somo Nós
+title: Somos Nós
 comments: true
 github: [metadata]
 exclude: ["node_modules", "gulpfile.js", "package.json"]

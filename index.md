@@ -1,6 +1,3 @@
 ---
-title: Somos Nós
+title: Início
 ---
-asdasd
-
-asdasd
