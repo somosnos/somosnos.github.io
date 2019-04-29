@@ -546,12 +546,15 @@ $(window).on('scroll', function () {
 		}
 	});
 });
-nav.find('a').on('click', function () {
-	var $el = $(this)
-	id = $el.attr('href');
-	id = id.substring(1);
-	$('html, body').animate({
-		scrollTop: $(id).offset().top
-	}, 1000);
-	return false;
-});
+nav.find('a').on('click',
+	function (e) {
+		e.preventDefault(); {
+			var $el = $(this)
+			id = $el.attr('href');
+			id = id.substring(1);
+			$('html, body').animate({
+				scrollTop: $(id).offset().top
+			}, 1000);
+			return false;
+		}
+	});
