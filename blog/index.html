@@ -1,0 +1,67 @@
+---
+layout: default
+title: BLOG
+breadcrumb: BLOG
+featuredimage: /assets/images/blog.jpg
+featured_title: BLOG
+---
+
+
+<input type="text" id="search-input" placeholder="Search Blog Posts..">
+
+<div id="results-container" class="grid-container">
+  {% for post in paginator.posts %}
+      {% include card.html url=post.url img_url=post.featuredimage title=post.title description=post.excerpt %}
+  {% endfor %}
+</div>
+
+<!-- Pagination links -->
+
+<div class="paginatorwrapper">
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}">
+          &laquo; Prev
+        </a>
+      {% else %}
+        <span>&laquo; Prev</span>
+      {% endif %}
+    
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <b>{{ page }}</b>
+        {% elsif page == 1 %}
+          <a href="{{ paginator.previous_page_path | relative_url }}">
+            {{ page }}
+          </a>
+        {% else %}
+          <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">
+            {{ page }}
+          </a>
+        {% endif %}
+      {% endfor %}
+    
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}">
+          Next &raquo;
+        </a>
+      {% else %}
+        <span>Next &raquo;</span>
+      {% endif %}
+    </div>
+    {% endif %}
+</div>
+
+<script src="/assets/js/simple-jekyll-search.js"></script>
+
+<script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/search.json',
+      searchResultTemplate: '<div class="card grid-item" onclick="goto(\'{{ site.baseurl }}{url}\')"><div class="card-top-image" style=\'background-image: url("{featuredimage}");\'> </div><div class="card-content"><h4><b>{title}</b></h4> <p class="card-excerpt">{description}</p><p class="card-readmore"><a>Read more ></a></p></div></div>'
+    })
+
+    
+</script>
