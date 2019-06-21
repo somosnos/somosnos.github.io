@@ -442,7 +442,7 @@ Lea's additional code
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+  display: inline;
 }
 
 /* Next & previous buttons */
@@ -519,9 +519,9 @@ Lea's additional code
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 5.5s;
+  -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 5.5s;
+  animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
@@ -534,3 +534,87 @@ Lea's additional code
   to {opacity: 1}
 }
 
+/* ------------------------------------------------------------------
+
+Lea's additional code - making carousel inside the activities
+
+--------------------------------------------------------*/
+
+
+@import "compass/css3";
+
+html,body {margin:0; padding:10px; -webkit-backface-visibility:hidden;}
+
+html {
+  font-family: "Calibri", "Trebuchet MS", "Helvetica", sans-serif;
+}
+h3 {
+  margin-top: 0;
+  font-size: 24px;
+}
+a,
+  a:visited {
+    color: #1760BF;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #c00;
+  }
+.links {
+  ul {
+    
+  }
+  li {
+   margin-bottom: 5px; 
+  }
+}
+h4 {
+  margin: 24px 0 0 0;
+}
+
+.bottom-text {
+  margin-top: 40px;
+  border-top: 2px solid #e5e7e9;
+  a {
+    border-bottom: 1px solid #e5e7e9;
+  }
+  p {
+   max-width: 650px; 
+  }
+}
+
+.hidden {
+  overflow: hidden;
+  display: none;
+  visibility: hidden;
+}
+
+
+.btn-gallery{
+	color: #ffffff;
+	background-color: #18bfc3;
+    font-size: 0.8571428571em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .3px;
+    border-radius: 50px;
+	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+	border: 0;
+	position: relative;
+    overflow: hidden;
+    z-index: 1;
+	transition: all .4s ease;
+	display: inline-block;
+	text-align: center;
+    white-space: nowrap;
+	vertical-align: middle;
+	user-select: none;
+	outline: none;
+	box-sizing: border-box;
+	padding: 16px 39px;
+}
+
+.btn-gallery:hover{
+	color:#fff;
+	background-color:#041D57;
+	border-color:#041D57}
