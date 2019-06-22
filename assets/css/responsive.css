@@ -541,7 +541,6 @@ Lea's additional code - making carousel inside the activities
 --------------------------------------------------------*/
 
 
-@import "compass/css3";
 
 html,body {margin:0; padding:10px; -webkit-backface-visibility:hidden;}
 
@@ -588,6 +587,8 @@ h4 {
   display: none;
   visibility: hidden;
 }
+
+
 
 
 .btn-gallery{

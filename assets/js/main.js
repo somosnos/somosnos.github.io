@@ -558,3 +558,72 @@ nav.find('a').on('click',
 			return false;
 		}
 	});
+
+
+
+	
+	/*==========================================================
+				Lea added galery carousel
+	======================================================================*/
+
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+	/*==========================================================
+				Lea added show pic on button
+	======================================================================*/
+
+function showPicture() {
+	var sourceOfPicture = document.getElementById('bigpic').src;
+	var img = document.getElementById('bigpic');
+	img.src = sourceOfPicture.replace('90x90', '225x225');
+	img.style.display = "block";
+  } 
+
+  	/*==========================================================
+				Lea added show gallery carousel when clicking the button on activities
+	======================================================================*/
+
+  $(document).ready(function() {
+
+	$('a.btn-gallery').on('click', function(event) {
+		event.preventDefault();
+		
+		var gallery = $(this).attr('href');
+    
+		$(gallery).magnificPopup({
+      delegate: 'a',
+			type:'image',
+			gallery: {
+				enabled: true
+			}
+		}).magnificPopup('open');
+	});
+	
+});
