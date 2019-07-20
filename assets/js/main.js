@@ -627,3 +627,20 @@ function showPicture() {
 	});
 	
 });
+
+/*==========================================================
+	Pedro added scroll effects for the navigation menu
+======================================================================*/
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navigation");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= 10) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
