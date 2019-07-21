@@ -650,3 +650,17 @@ Pedro's additional code - making navigation always present
 .btn {
 	padding: 16px 20px;
 }
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25% !important; /* 16:9 */
+	padding-top: 25px !important;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
