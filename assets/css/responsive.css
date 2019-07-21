@@ -83,9 +83,7 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
 	}
 	.header-transparent .nav-brand, 
 	.xs-box .nav-brand {
-		filter: none;
-		min-height: auto;
-		max-height: none;
+		
 		line-height: 1;
 		margin-top: 20px;
 		margin-bottom: 20px;
@@ -602,7 +600,6 @@ Pedro's additional code - making navigation always present
 	height: 0px;
 	background-color: white !important;
 	filter: drop-shadow(8px 0px 16px rgba(0, 0, 0, 0.2));
-	
 }
 
 .header-transparent .nav-menu li a {
@@ -630,7 +627,7 @@ Pedro's additional code - making navigation always present
 	padding-right: 90px;
 }
 
-.header-transparent .nav-brand, .xs-box .nav-brand { background-size: contain; background-repeat: no-repeat; background-position: top;  }
+.header-transparent .nav-brand, .xs-box .nav-brand { background-image: url(../images/logo-bg.png); background-size: contain; background-repeat: no-repeat; background-position: top;  }
 
 
 .header-transparent .nav-brand, .xs-box .nav-brand::before {
@@ -663,4 +660,56 @@ Pedro's additional code - making navigation always present
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.xs_nav-portrait .nav-logo>img {
+	margin: auto;
+}
+
+.hide-on-bigscreen {
+	display: none;
+}
+
+@media (max-width: 992px) {
+
+
+	.no-scroll .sticky {
+		
+		padding-bottom: 100% !important;
+		background-color: transparent !important;
+		filter: none;
+	}
+
+	.no-scroll #navigation {
+		-webkit-transition: all 0s linear;
+		-moz-transition: all 0s linear;
+		-o-transition: all 0s linear;
+		transition: all 0s linear;
+	}
+
+	.header-transparent .nav-brand, .xs-box .nav-brand::before {
+		content: "";
+		position: absolute;
+		top: -20px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		box-shadow: 0 -10px 0 white;
+	}
+
+	.nav-menus-wrapper {
+		position: fixed;
+	}
+	
+
+	.header-transparent .nav-brand, .xs-box .nav-brand img {
+		max-width: 17%;
+		min-width: 135px;
+		height: auto;
+
+	}
+
+	.hide-on-bigscreen {
+		display: block;
+	}
 }
