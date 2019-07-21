@@ -646,3 +646,7 @@ Pedro's additional code - making navigation always present
 .nav-brand img {
 	vertical-align: top;
 }
+
+.btn {
+	padding: 16px 20px;
+}
