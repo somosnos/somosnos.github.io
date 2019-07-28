@@ -682,6 +682,9 @@ Pedro's additional code - making navigation always present
 
 @media (max-width: 992px) {
 
+	.nav-toggle {
+		padding: 20px 2px 0;
+	}
 
 	.no-scroll .sticky {
 		
