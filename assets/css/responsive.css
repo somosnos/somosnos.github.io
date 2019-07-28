@@ -670,7 +670,7 @@ Pedro's additional code - making navigation always present
 	display: none;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1023px) {
 
 
 	.no-scroll .sticky {
@@ -711,5 +711,10 @@ Pedro's additional code - making navigation always present
 
 	.hide-on-bigscreen {
 		display: block;
+	}
+
+	.header-container {
+		padding-left: 20px;
+    	padding-right: 15px;
 	}
 }
