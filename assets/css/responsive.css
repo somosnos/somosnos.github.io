@@ -697,6 +697,15 @@ Pedro's additional code - making navigation always present
 		transition: all 0s linear;
 	}
 
+	.no-scroll .nav-brand {
+		display: none;
+	}
+
+	.no-scroll .xs-navs-button {
+		justify-content: center !important;
+		padding-bottom: 20px;
+	}
+
 	.sticky .nav-toggle:before {
 		background-color: #333333 !important;
 		box-shadow: 0 0.5em 0 0 #333333, 0 1em 0 0 #333333 !important;
