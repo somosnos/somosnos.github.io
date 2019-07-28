@@ -697,7 +697,7 @@ Pedro's additional code - making navigation always present
 		transition: all 0s linear;
 	}
 
-	.no-scroll .nav-brand {
+	.nav-menus-wrapper .nav-brand {
 		display: none;
 	}
 
