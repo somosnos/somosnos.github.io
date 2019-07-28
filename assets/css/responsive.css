@@ -623,11 +623,17 @@ Pedro's additional code - making navigation always present
 
 
 .header-container {
-	padding-left: 90px;
-	padding-right: 90px;
+	padding-left: 4%;
+	padding-right: 4%;
 }
 
-.header-transparent .nav-brand, .xs-box .nav-brand { background-image: url(../images/logo-bg.png); background-size: contain; background-repeat: no-repeat; background-position: top;  }
+.header-transparent .nav-brand, .xs-box .nav-brand { 
+	background-image: url(../images/logo-bg.png); 
+	background-size: contain; 
+	background-repeat: no-repeat; 
+	background-position: top;
+	min-width: 130px;
+}
 
 
 .header-transparent .nav-brand, .xs-box .nav-brand::before {
@@ -646,6 +652,10 @@ Pedro's additional code - making navigation always present
 
 .btn {
 	padding: 16px 20px;
+}
+
+.nav-donate {
+	min-width: 100px;
 }
 
 .videoWrapper {
@@ -670,7 +680,7 @@ Pedro's additional code - making navigation always present
 	display: none;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 992px) {
 
 
 	.no-scroll .sticky {
@@ -685,6 +695,11 @@ Pedro's additional code - making navigation always present
 		-moz-transition: all 0s linear;
 		-o-transition: all 0s linear;
 		transition: all 0s linear;
+	}
+
+	.sticky .nav-toggle:before {
+		background-color: #333333 !important;
+		box-shadow: 0 0.5em 0 0 #333333, 0 1em 0 0 #333333 !important;
 	}
 
 	.header-transparent .nav-brand, .xs-box .nav-brand::before {
@@ -713,8 +728,4 @@ Pedro's additional code - making navigation always present
 		display: block;
 	}
 
-	.header-container {
-		padding-left: 20px;
-    	padding-right: 15px;
-	}
 }
