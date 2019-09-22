@@ -744,3 +744,7 @@ Pedro's additional code - making navigation always present
 	}
 
 }
+
+.xs-heading .xs-title {
+	z-index: auto !important;
+}
