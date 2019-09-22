@@ -750,8 +750,8 @@ Pedro's additional code - making navigation always present
 }
 
 .mySlides {display:none;border-radius:10px;}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
+.w3-left, .w3-right, .w3-badge {cursor:pointer;}
+.w3-badge {height:13px;width:13px;padding:0;}
 
 .partnertypes, .partnertypes li {
 	padding:20px;
