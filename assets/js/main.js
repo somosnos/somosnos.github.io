@@ -669,7 +669,7 @@ $(document).ready(function() {
 		result._captcha = "false"
 		$.ajax({
 		  method: 'POST',
-		  url: 'https://formsubmit.co/youremail@example.com',
+		  url: 'https://formsubmit.co/somosnos@somosnos.pt',
 		  data: result,
 		  datatype: 'json'
 		});

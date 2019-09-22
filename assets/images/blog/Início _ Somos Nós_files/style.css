@@ -27,9 +27,9 @@ ul, li { margin: 0; padding: 0; list-style: none; }
 
 .clear-both:before, .clear-both:after { display: table; content: ""; clear: both; }
 
-.xs-heading .xs-title { color: #041D57; font-size: 3.2857142857em; font-weight: 700; letter-spacing: -.2px; position: relative; z-index: 1; margin-bottom: 7px; }
+.xs-heading .xs-title { color: #041D57; font-size: 3.2857142857em; font-weight: 700; letter-spacing: -.2px; position: relative; z-index: auto; margin-bottom: 7px; }
 .xs-heading .xs-title:before { position: absolute; content: attr(data-title); top: -90px; left: -44px; font-size: 3.846em; color: #F9F9F9; line-height: 1; z-index: -1; pointer-events: none; }
-.xs-heading .xs-title.big { font-size: 3.7142857143em; margin-bottom: 0; }
+.xs-heading .xs-title.big { font-size: 3.7142857143em; margin-bottom: 0;}
 .xs-heading .xs-title.small { font-size: 2.5714285714em; }
 .xs-heading span { color: #18bfc3; }
 .xs-heading .color-green { color: #3ac798; }
