@@ -644,3 +644,38 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+/*=========================================================
+Pedro added submit form code
+===========================================================*/
+
+$(document).ready(function() {
+	$('#joinus-form').submit(function(e) {
+	  var name    = document.getElementById('inputName')
+	  var email   = document.getElementById('inputEmail')
+	  var typeSelect   = document.getElementById('inputType')
+	  var message = document.getElementById('inputMessage')
+
+	  var type = typeSelect.options[typeSelect.selectedIndex]
+
+
+	  console.log(type)
+  
+	  if (!name.value || !email.value || !message.value || !type.value) {
+		alertify.error("Por favor preencha todos os campos");
+		return false;
+	  } else {
+		var result = $('#joinus-form').serialize();
+		result._captcha = "false"
+		$.ajax({
+		  method: 'POST',
+		  url: 'https://formsubmit.co/youremail@example.com',
+		  data: result,
+		  datatype: 'json'
+		});
+		e.preventDefault();
+		$(this).get(0).reset();
+		alertify.success("Mensagem enviada");
+	  }
+	});
+  });

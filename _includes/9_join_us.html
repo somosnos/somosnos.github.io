@@ -6,23 +6,24 @@
                 <div class="xs-volunteer-form-wraper bg-aqua">
                     <h2>Torna-te parte da SOMOS NÓS</h2>
                     <p>Junta-te como voluntário ou Amigo. Preenche o formulário com a informação pertinente. <br>Entraremos em contacto contigo em breve.</p>
-                    <form action="#" method="POST" id="volunteer-form" class="xs-volunteer-form">
+                    <form action="#" method="POST" id="joinus-form" class="xs-volunteer-form">
                         <div class="row">
                             <div class="col-lg-6">
-                                <input type="text" id="volunteer_name" class="form-control" placeholder="O teu nome">
+                                <input type="text" name="nome" id="inputName" class="form-control" placeholder="O teu nome">
                             </div>
                             <div class="col-lg-6">
-                                <input type="email" id="volunteer_email" class="form-control" placeholder="O teu email">
+                                <input type="email" name="email" id="inputEmail" class="form-control" placeholder="O teu email">
                             </div>
                             <div class="col-lg-12">
-                                <select name="branch" class="form-control" id="volunteer_brach">
-                                    <option value="">Amigo</option>
-                                    <option value="">Voluntário</option>
-                                    <option value="">Outro</option>
+                                <select name="tipo" class="form-control" id="inputType">
+                                    <option value="amigo">Amigo</option>
+                                    <option value="socio">Sócio</option>
+                                    <option value="voluntario">Voluntário</option>
+                                    <option value="outro">Outro</option>
                                 </select>
                             </div>
                         </div><!-- .row end -->
-                        <textarea name="message" id="message" placeholder="Escreve-nos uma mensagem..." cols="30"
+                        <textarea name="mensagem" id="inputMessage" placeholder="Escreve-nos uma mensagem..." cols="30"
                             class="form-control" rows="10"></textarea>
                         <button type="submit" class="btn btn-secondary btn-color-alt">Enviar</button>
                     </form><!-- #volunteer-form .xs-volunteer-form END -->
