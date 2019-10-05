@@ -756,3 +756,18 @@ Pedro's additional code - making navigation always present
 .partnertypes, .partnertypes li {
 	padding:20px;
 }
+
+@media (min-width: 2200px) {
+
+	.header-transparent .nav-brand, .xs-box .nav-brand {
+		background-image: url(../images/logo-bg.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: bottom;
+		min-width: 130px;
+	}
+	.nav-brand img {
+		vertical-align: top;
+		max-height: 70%;
+	}
+}
