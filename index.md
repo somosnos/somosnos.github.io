@@ -1,3 +1,3 @@
 ---
-title: Início
+title: Somos Nós
 ---
