@@ -813,30 +813,30 @@ Pedro's additional code - making navigation always present
 	}
 }
   
-  .dropdown-content a {
-	background-color: #f1f1f1;
-	color: black !important;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover #navwhereweare, .nav-menu a:hover {
-	  background-color: #18BFC4;
-	  color: #FFFFFF !important;
-	}
+.dropdown-content a {
+background-color: #f1f1f1;
+color: black !important;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover #navwhereweare, .nav-menu a:hover, .xs-round-nav {
+	background-color: #18BFC4;
+	color: #FFFFFF !important;
+}
 
 
-	@media (min-width: 992px) {
-		.dropdown-content {
-			display: none;
-			position: absolute;
-			min-width: 160px;
-			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-			z-index: 1;
-		  }
-	}
+@media (min-width: 992px) {
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		}
+}
