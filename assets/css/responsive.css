@@ -670,6 +670,7 @@ Pedro's additional code - making navigation always present
 	left: 0;
 	width: 100%;
 	height: 100%;
+    border-radius: 4px;
 }
 
 .xs_nav-portrait .nav-logo>img {
@@ -749,7 +750,36 @@ Pedro's additional code - making navigation always present
 	z-index: auto !important;
 }
 
-.mySlides {display:none;border-radius:10px;}
+.mySlides {display:none;width: 100%;}
+.w3-content {
+	height: 330px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+@media (max-width: 1200px) {
+	.w3-content {
+		height: 280px;
+	}
+}
+
+@media (max-width: 992px) {
+	.w3-content {
+		height: 370px;
+	}
+}
+
+@media (max-width: 770px) {
+	.w3-content {
+		height: 300px;
+	}
+}
+
+@media (max-width: 435px) {
+	.w3-content {
+		height: 200px;
+	}
+}
 .w3-left, .w3-right, .w3-badge {cursor:pointer;}
 .w3-badge {height:13px;width:13px;padding:0;}
 
