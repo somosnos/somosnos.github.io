@@ -787,6 +787,17 @@ Pedro's additional code - making navigation always present
 	padding:20px;
 }
 
+.xs-feature-image img, .xs-event-image, .xs-box-shadow, .xs-info-list i, .xs-back-to-top {
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+@media (min-width: 992px) {
+	.xs-feature-box.highlight {
+		border-radius: 4px;
+	}
+}
+
 @media (min-width: 2200px) {
 
 	.header-transparent .nav-brand, .xs-box .nav-brand {
