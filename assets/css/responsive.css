@@ -845,3 +845,8 @@ display: block;
 		z-index: 1;
 		}
 }
+
+
+
+.xs-entry-date .entry-date-day {font-size: 1.8em;}
+.xs-entry-date .entry-date-month {font-size: 1.4em;}
