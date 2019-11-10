@@ -853,3 +853,15 @@ display: block;
 .xs-info-list li {
 	width: 100%;
 }
+
+.partnerlist {
+	margin: 0;
+    padding: 0;
+    list-style: inside;
+}
+
+.partnerlist li {
+	margin: 0;
+    padding: 0;
+    list-style: inside;
+}
