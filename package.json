@@ -24,6 +24,6 @@
     "gulp-sass": "^4.0.2",
     "gulp-shell": "^0.7.0",
     "gulp-util": "^3.0.8",
-    "lodash": "^4.17.13"
+    "lodash": "^4.17.19"
   }
 }
