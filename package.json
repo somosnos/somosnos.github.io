@@ -21,7 +21,7 @@
     "child_process": "^1.0.2",
     "gulp": "^4.0.1",
     "gulp-autoprefixer": "^6.1.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "gulp-shell": "^0.7.0",
     "gulp-util": "^3.0.8",
     "lodash": "^4.17.13"
