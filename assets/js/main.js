@@ -682,7 +682,7 @@ $(document).ready(function() {
 
   $(document).ready(function() {
 	$('a.donate').on('click', function(event) {
-		alertify.alert('Efectue uma doação!', '<p>Muito obrigado pelo seu apoio!</p><p>Qualquer ajuda é muito bem vinda.</p><p>A Associação não tem fins lucrativos e por ser uma IPSS, as contribuições podem ser deduzidas, nos termos da legislação aplicável, em sede de impostos.</p><br /> <br /><p>Informação para transferência:</p><p><b>Banco:</b> BCP</p><p><b>IBAN:</b> PT50003300004534211621005</p><p><b>BIC/SWIFT:</b> BCOMPTPL</p><br /><br />Por favor envie-nos um comprovativo da sua doação para: somosnos@somosnos.pt');
+		alertify.alert('Efectue uma doação!', '<p>Muito obrigado pelo seu apoio!</p><p>Qualquer ajuda é muito bem vinda.</p><p>A Associação não tem fins lucrativos e por ser uma IPSS, as contribuições podem ser deduzidas, nos termos da legislação aplicável, em sede de impostos.</p><br /> <br /><p>Informação para transferência:</p><p><b>Banco:</b> BPI</p><p><b>IBAN:</b> PT50 0010 0000 38113170001 98</p><p><b>BIC/SWIFT:</b> BBPIPTPL</p><br /><br />Por favor envie-nos um comprovativo da sua doação para: somosnos@somosnos.pt');
 	});
 });
 
